@@ -34,7 +34,10 @@ public class Tracker {
 
     public boolean replace(int id, Item newItem) {
         int index = indexOf(id);
-        if (index == -1) {
+        boolean result = index != -1;
+
+        if (!result) {
+            System.out.println("Элемент массива не найден");
             return false;
         }
         newItem.setId(items[index].getId());
@@ -45,8 +48,9 @@ public class Tracker {
 
     public void delete(int id) {
         int index = indexOf(id);
+        boolean result = index != -1;
 
-        if (index != -1) {
+        if (result) {
             System.arraycopy(items, index + 1, items, index, size - index - 1);
             items[size - 1] = null;
             size--;
