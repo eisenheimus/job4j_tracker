@@ -40,7 +40,7 @@ public class Tracker {
             System.out.println("Элемент массива не найден");
             return false;
         }
-        newItem.setId(items[index].getId());
+        newItem.setId(id);
         items[index] = newItem;
 
         return true;
