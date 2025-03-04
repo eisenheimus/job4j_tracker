@@ -37,7 +37,6 @@ public class Tracker {
         boolean result = index != -1;
 
         if (!result) {
-            System.out.println("Элемент массива не найден");
             return false;
         }
         newItem.setId(id);
