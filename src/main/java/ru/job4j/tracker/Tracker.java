@@ -41,7 +41,6 @@ public class Tracker {
         }
         newItem.setId(id);
         items[index] = newItem;
-
         return true;
     }
 
