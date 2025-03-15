@@ -30,6 +30,7 @@ public class StartUI {
                 new FindByNameAction(),
                 new ExitAction()
         };
+
         new StartUI().init(input, tracker, actions);
     }
 }
